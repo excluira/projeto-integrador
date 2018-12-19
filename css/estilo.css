@@ -1,0 +1,34 @@
+#sup{
+	width: 150px;
+	height: 150px;
+	position: relative;
+
+	animation: movimento; /* aqui eu dou o nome da animação*/
+	animation-duration: 2s;/* tempo de duraçao da animaçao */
+	animation-iteration-count: infinite;/*contagem de interaçao*/
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;	
+}
+@keyframes movimento{
+
+	0% {/* ponto inicial da animaçao*/
+
+		left: 0px;
+		top: 0px;
+	}
+	50%{/* ponto final da animaçao*/
+		left: 500px;
+		top: 50px;
+		width: 200px;
+	    height: 200px;
+	}
+	75%{/* ponto final da animaçao*/
+		left: 1000px;
+		top: 0px;
+	}
+	100%{/* ponto final da animaçao*/
+		left:0px;
+		top: 0px;
+	}
+}
+
