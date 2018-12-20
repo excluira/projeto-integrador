@@ -1,34 +1,47 @@
-#sup{
-	width: 150px;
-	height: 150px;
+.bolinha{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
 	position: relative;
 
-	animation: movimento; /* aqui eu dou o nome da animação*/
-	animation-duration: 2s;/* tempo de duraçao da animaçao */
-	animation-iteration-count: infinite;/*contagem de interaçao*/
-	animation-timing-function: ease-in-out;
-	animation-direction: alternate;	
+	animation-name: bolinhas;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
-@keyframes movimento{
-
-	0% {/* ponto inicial da animaçao*/
-
+.bolinha1{
+	background-color: red;
+}
+.bolinha2{
+	background-color: green;
+	transform: translateY(-20px);
+	animation-delay: 0.2s;
+}
+.bolinha3{
+	background-color: blue;
+	transform: translateY(-40px);
+	animation-delay: 0.4s;
+}
+@keyframes bolinhas{
+	0%{
 		left: 0px;
 		top: 0px;
 	}
+	25%{ 
+		left: 200px;
+		top: 200px;
+	}
 	50%{/* ponto final da animaçao*/
-		left: 500px;
-		top: 50px;
-		width: 200px;
-	    height: 200px;
+		left: 200px;
+		top: 0px;
+		filter: hue-rotate(360deg);
 	}
 	75%{/* ponto final da animaçao*/
-		left: 1000px;
-		top: 0px;
+		left: 0px;
+		top: 200px;
 	}
 	100%{/* ponto final da animaçao*/
 		left:0px;
 		top: 0px;
 	}
 }
-
