@@ -10,3 +10,10 @@ font-family: 'Lobster', cursive;
 .fundo--tomato{
 	background-color: crimson !important;
 }
+th,td{
+border: 1px solid black !important
+}
+
+.gradiente { 
+background-image: linear-gradient(to left, #D8D8D8, #1C1C1C)
+ }
